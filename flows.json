@@ -1,0 +1,588 @@
+[
+    {
+        "id": "329d8985.f9ca96",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3af64504.9a373a",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "CloudMQTT",
+        "broker": "postman.cloudmqtt.com",
+        "port": "16478",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "95b2ce8f.517f4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5f030c30.51f854",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Monitor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1538097.cac25f7",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temprature",
+        "tab": "5f030c30.51f854",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ab6489df.629428",
+        "type": "ui_group",
+        "z": "",
+        "name": "Moisutre",
+        "tab": "5f030c30.51f854",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cbae041.47c87f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light",
+        "tab": "5f030c30.51f854",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "af74a3b7.b0bac",
+        "type": "ui_group",
+        "z": "",
+        "name": "Fertility",
+        "tab": "5f030c30.51f854",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f17ffa71.f21e18",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temprature graph",
+        "tab": "5f030c30.51f854",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "563ef606.bd9238",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light Graph",
+        "tab": "5f030c30.51f854",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ce10ca13.daeee8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Moisture Graph",
+        "tab": "5f030c30.51f854",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bd629405.8c9e68",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil Fertility Graph",
+        "tab": "5f030c30.51f854",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "29ebf2c3.b4ad8e",
+        "type": "mqtt in",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "topic": "flora/c4:7c:8d:60:90:49/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3af64504.9a373a",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "c4a7ce85.4aef1",
+                "5605680c.3b34f8",
+                "8fc54afd.c6a088"
+            ]
+        ]
+    },
+    {
+        "id": "c4a7ce85.4aef1",
+        "type": "debug",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 558,
+        "y": 147,
+        "wires": []
+    },
+    {
+        "id": "82e7fc5d.226b9",
+        "type": "mqtt in",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "topic": "flora/c4:7c:8d:60:90:49/moisture",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3af64504.9a373a",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "c4a7ce85.4aef1",
+                "9b63e6f4.b6ad18",
+                "d98c0d10.b1f47"
+            ]
+        ]
+    },
+    {
+        "id": "71c6afe3.548b2",
+        "type": "mqtt in",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "topic": "flora/c4:7c:8d:60:90:49/light",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3af64504.9a373a",
+        "x": 220,
+        "y": 340,
+        "wires": [
+            [
+                "c4a7ce85.4aef1",
+                "c18380b.61b128",
+                "21908d3a.012082"
+            ]
+        ]
+    },
+    {
+        "id": "67e6f44c.eb4bcc",
+        "type": "mqtt in",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "topic": "flora/c4:7c:8d:60:90:49/conductivity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3af64504.9a373a",
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "c4a7ce85.4aef1",
+                "b25181d2.4fbb5",
+                "87b0f7b2.084188"
+            ]
+        ]
+    },
+    {
+        "id": "5605680c.3b34f8",
+        "type": "ui_gauge",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "1538097.cac25f7",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Air Temprature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 570.5,
+        "y": 215,
+        "wires": []
+    },
+    {
+        "id": "9b63e6f4.b6ad18",
+        "type": "ui_gauge",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "ab6489df.629428",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil Moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 557.5,
+        "y": 281,
+        "wires": []
+    },
+    {
+        "id": "c18380b.61b128",
+        "type": "ui_gauge",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "cbae041.47c87f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Light Intesity",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "25000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 555.5,
+        "y": 338,
+        "wires": []
+    },
+    {
+        "id": "b25181d2.4fbb5",
+        "type": "ui_gauge",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "af74a3b7.b0bac",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil Fertility",
+        "label": "µS/cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 556.5,
+        "y": 392,
+        "wires": []
+    },
+    {
+        "id": "8fc54afd.c6a088",
+        "type": "ui_chart",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "f17ffa71.f21e18",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temprature Graph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "10",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 748.5,
+        "y": 249,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21908d3a.012082",
+        "type": "ui_chart",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "563ef606.bd9238",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Light Graph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "25000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 732.5,
+        "y": 364,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d98c0d10.b1f47",
+        "type": "ui_chart",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "ce10ca13.daeee8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Moisture Graph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 745.5,
+        "y": 301,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87b0f7b2.084188",
+        "type": "ui_chart",
+        "z": "329d8985.f9ca96",
+        "name": "",
+        "group": "bd629405.8c9e68",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Soil Fertility Graph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "5000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 749.5,
+        "y": 425,
+        "wires": [
+            []
+        ]
+    }
+]
