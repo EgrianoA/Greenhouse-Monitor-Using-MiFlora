@@ -5,4 +5,4 @@ In this system I'm using :
 4. Node-Red in server to subscribe data from CloudMQTT and display the dashboard
 
 For the workflow of the system I'll describe using image below
-![Screen 1](Preview/Scheme.JPG)
+![Screen 1](Scheme.JPG)
